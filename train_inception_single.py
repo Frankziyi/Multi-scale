@@ -326,7 +326,7 @@ class Trainer(object):
             batch_size = FLAGS.batch_size,
             capacity = 3000,
             min_after_dequeue = 1000,
-            num_threads = 4
+            num_threads = 3
         )
         labels = tf.one_hot(labels, FLAGS.num_classes-FLAGS.labels_offset)
 
