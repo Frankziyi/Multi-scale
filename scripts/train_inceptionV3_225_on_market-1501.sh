@@ -8,7 +8,7 @@ DATASET_DIR=/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord
 # WHere the log is saved to
 LOG_DIR=/world/data-gpu-94/sysu-reid/zhangkaicheng/log
 # Wher the tfrecord file is save to
-OUTPUT_DIR=/
+OUTPUT_DIR=/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord/bounding_box_train
 python train_inception_single.py \
 --learning_rate=2e-4 \
 --learning_rate_decay_type=fixed \
