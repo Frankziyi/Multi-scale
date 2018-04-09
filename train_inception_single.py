@@ -173,7 +173,6 @@ tf.app.flags.DEFINE_string(
 
 FLAGS = tf.app.flags.FLAGS
 
-# jh-future:it needs to be add to tf.app.flags
 os.environ["CUDA_VISIBLE_DEVICES"]=FLAGS.GPU_use
 
 def _configure_learning_rate(num_samples_per_epoch, global_step):
