@@ -144,13 +144,13 @@ tf.app.flags.DEFINE_integer(
 tf.app.flags.DEFINE_integer('max_number_of_steps', None,
                             'The maximum number of training steps.')
 
-tf.app.flags.DEFINE_integer('origin_height', 128, 'origin height of image')
+tf.app.flags.DEFINE_integer('origin_height', 225, 'origin height of image')
 
-tf.app.flags.DEFINE_integer('origin_width', 64, 'origin width of image')
+tf.app.flags.DEFINE_integer('origin_width', 225, 'origin width of image')
 
 tf.app.flags.DEFINE_integer('origin_channel', 3, 'origin channel of image')
 
-tf.app.flags.DEFINE_integer('num_classes', 751, 'num of classes')
+tf.app.flags.DEFINE_integer('num_classes', 702, 'num of classes')
 
 tf.app.flags.DEFINE_integer('scale_size', 299, 'size of scale in single model')
 
@@ -326,7 +326,7 @@ class Trainer(object):
             batch_size = FLAGS.batch_size,
             capacity = 3000,
             min_after_dequeue = 1000,
-            num_threads = 3
+            num_threads = 4
         )
         labels = tf.one_hot(labels, FLAGS.num_classes-FLAGS.labels_offset)
 
