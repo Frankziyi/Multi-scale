@@ -2,15 +2,15 @@
 # Where the pre-trained InceptionV3 checkpoint is saved to.
 PRETRAINED_CHECKPOINT_DIR=/world/data-gpu-94/sysu-reid/checkpoints
 # Where the training (fine-tuned) checkpoint and logs will be saved to.
-TRAIN_DIR=/world/data-gpu-94/sysu-reid/checkpoints/inception_v3_225
+TRAIN_DIR=/home/yuanziyi/checkpoints/Duke_inception_225
 # Where the dataset is saved to.
-DATASET_DIR=/home/yuanziyi/Market-1501
+DATASET_DIR=/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord
 # WHere the log is saved to
 LOG_DIR=/home/yuanziyi/log
 # Wher the tfrecord file is save to
-PROBE_OUTPUT_DIR=/home/yuanziyi/Market-1501-tfrecord/query
+PROBE_OUTPUT_DIR=/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord/query
 # Wher the tfrecord file is save to
-GALLERY_OUTPUT_DIR=/world/data-gpu-94/sysu-reid/zhangkaicheng/Market-1501-tfrecord/bounding_box_test
+GALLERY_OUTPUT_DIR=/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord/bounding_box_test
 python get_features_single.py \
 --dataset_name=Market_1501 \
 --probe_dataset_dir=${PROBE_OUTPUT_DIR} \
