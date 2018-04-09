@@ -309,6 +309,8 @@ class Get_feature(object):
             probe_img_label.append(batch[1])
             probe_img_cam.append(batch[2])
 
+        pdb.set_trace()    
+
         probe_img_features = np.concatenate(probe_img_features, axis=0)
         probe_img_label = np.concatenate(probe_img_label, axis=0)
         probe_img_cam = np.concatenate(probe_img_cam, axis=0)
