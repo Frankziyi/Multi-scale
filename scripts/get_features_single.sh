@@ -23,5 +23,5 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=55646 \
+--ckpt_num=58714 \
 --scale_size=225
