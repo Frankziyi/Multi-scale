@@ -175,7 +175,9 @@ def main():
     	)
     ans = cmc(DIST, PL, GL, PCAM, GCAM, first_match_break=True)
     # ans = cmc(DIST, separate_camera_set=True)
+    mAP = mean_ap(DIST, PL, GL, PCAM, GCAM)
     print(ans)
+    print(mAP)
 
 if __name__ == "__main__":
     main()
