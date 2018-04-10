@@ -71,7 +71,6 @@ def cmc(distmat, query_ids=None, gallery_ids=None,
     # Sort and find correct matches
     indices = np.argsort(distmat, axis=1)
     matches = (gallery_ids[indices] == query_ids[:, np.newaxis])
-    pdb.set_trace()
 
     # Compute CMC for each query
     ret = np.zeros(topk)
@@ -117,7 +116,7 @@ def cmc(distmat, query_ids=None, gallery_ids=None,
 
 def mean_ap(distmat, query_ids=None, gallery_ids=None,
             query_cams=None, gallery_cams=None):
-    distmat = to_numpy(distmat)
+    # distmat = to_numpy(distmat)
     m, n = distmat.shape
     # Fill up default values
     if query_ids is None:
@@ -177,6 +176,7 @@ def main():
     # ans = cmc(DIST, separate_camera_set=True)
     mAP = mean_ap(DIST, PL, GL, PCAM, GCAM)
     print(ans)
+    print('-------------------------------------')
     print(mAP)
 
 if __name__ == "__main__":
