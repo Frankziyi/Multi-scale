@@ -35,7 +35,7 @@ def worker(args):
 
     imgs = [skimage.io.imread(os.path.join(input_path,name)) for name in img_names]
     labels = [int(name[:name.find('_')]) for name in img_names]
-    cams = [int(name[name.find('c')+1 : name.find('s')]) for name in img_names]
+    cams = [int(name[name.find('c')+1 : name.find('_')]) for name in img_names]
     
     for i in range(len(labels)):
         img = imgs[i]
