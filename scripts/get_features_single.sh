@@ -23,5 +23,35 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=58714 \
+--ckpt_num=49829 \
+--scale_size=225
+
+python get_features_single.py \
+--dataset_name=Market_1501 \
+--probe_dataset_dir=${PROBE_OUTPUT_DIR} \
+--gallery_dataset_dir=${GALLERY_OUTPUT_DIR} \
+--model_name=inception_v3 \
+--batch_size=8 \
+--max_number_of_steps=10001 \
+--checkpoint_dir=${TRAIN_DIR} \
+--pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
+--log_dir=${LOG_DIR} \
+--optimizer=sgd \
+--weight_decay=0.00004 \
+--ckpt_num=52799 \
+--scale_size=225
+
+python get_features_single.py \
+--dataset_name=Market_1501 \
+--probe_dataset_dir=${PROBE_OUTPUT_DIR} \
+--gallery_dataset_dir=${GALLERY_OUTPUT_DIR} \
+--model_name=inception_v3 \
+--batch_size=8 \
+--max_number_of_steps=10001 \
+--checkpoint_dir=${TRAIN_DIR} \
+--pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
+--log_dir=${LOG_DIR} \
+--optimizer=sgd \
+--weight_decay=0.00004 \
+--ckpt_num=55766 \
 --scale_size=225
