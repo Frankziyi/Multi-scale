@@ -5,6 +5,7 @@ from __future__ import print_function
 
 import skimage
 import skimage.io
+from skimage import transform
 import sys
 import os
 import multiprocessing
@@ -14,8 +15,8 @@ import random
 import pdb
 
 #setting path
-input_path = '/world/data-gpu-94/sysu-reid/zhangkaicheng/Market-1501/bounding_box_test'
-output_path = '/world/data-gpu-94/sysu-reid/zhangkaicheng/Market-1501-tfrecord/bounding_box_test'
+input_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID/bounding_box_test'
+output_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord/bounding_box_test'
 
 num_workers = 4
 
@@ -38,6 +39,8 @@ def worker(args):
     
     for i in range(len(labels)):
         img = imgs[i]
+        img = transform.resize(img, (225, 225))
+        img = (img * 255).astype(np.uint8)
         label = labels[i]
         cam = cams[i]
         if label == -1 or label == 0:
