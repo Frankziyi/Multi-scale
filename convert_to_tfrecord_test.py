@@ -15,8 +15,8 @@ import random
 import pdb
 
 #setting path
-input_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID/bounding_box_test'
-output_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord/bounding_box_test'
+input_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID/query'
+output_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord/query'
 
 num_workers = 4
 
