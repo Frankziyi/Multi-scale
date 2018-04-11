@@ -8,36 +8,36 @@
 # --cam_probe_path=/home/yuanziyi/multiscale/multiscale_master/multiscale/59286/queryCAM.mat 
 
 python eval.py \
---label_gallery_path=/home/yuanziyi/bishe/Multi-scale/95716/test_gallery_labels.mat \
---feature_gallery_path=/home/yuanziyi/bishe/Multi-scale/95716/test_gallery_features.mat \
---label_probe_path=/home/yuanziyi/bishe/Multi-scale/95716/test_probe_labels.mat \
---feature_probe_path=/home/yuanziyi/bishe/Multi-scale/95716/test_probe_features.mat \
---cam_gallery_path=/home/yuanziyi/bishe/Multi-scale/95716/testCAM.mat \
---cam_probe_path=/home/yuanziyi/bishe/Multi-scale/95716/queryCAM.mat 
+--label_gallery_path=/home/yuanziyi/bishe/Multi-scale/58622/test_gallery_labels.mat \
+--feature_gallery_path=/home/yuanziyi/bishe/Multi-scale/58622/test_gallery_features.mat \
+--label_probe_path=/home/yuanziyi/bishe/Multi-scale/58622/test_probe_labels.mat \
+--feature_probe_path=/home/yuanziyi/bishe/Multi-scale/58622/test_probe_features.mat \
+--cam_gallery_path=/home/yuanziyi/bishe/Multi-scale/58622/testCAM.mat \
+--cam_probe_path=/home/yuanziyi/bishe/Multi-scale/58622/queryCAM.mat 
 
 python eval.py \
---label_gallery_path=/home/yuanziyi/bishe/Multi-scale/97077/test_gallery_labels.mat \
---feature_gallery_path=/home/yuanziyi/bishe/Multi-scale/97077/test_gallery_features.mat \
---label_probe_path=/home/yuanziyi/bishe/Multi-scale/97077/test_probe_labels.mat \
---feature_probe_path=/home/yuanziyi/bishe/Multi-scale/97077/test_probe_features.mat \
---cam_gallery_path=/home/yuanziyi/bishe/Multi-scale/97077/testCAM.mat \
---cam_probe_path=/home/yuanziyi/bishe/Multi-scale/97077/queryCAM.mat 
+--label_gallery_path=/home/yuanziyi/bishe/Multi-scale/73863/test_gallery_labels.mat \
+--feature_gallery_path=/home/yuanziyi/bishe/Multi-scale/73863/test_gallery_features.mat \
+--label_probe_path=/home/yuanziyi/bishe/Multi-scale/73863/test_probe_labels.mat \
+--feature_probe_path=/home/yuanziyi/bishe/Multi-scale/73863/test_probe_features.mat \
+--cam_gallery_path=/home/yuanziyi/bishe/Multi-scale/73863/testCAM.mat \
+--cam_probe_path=/home/yuanziyi/bishe/Multi-scale/73863/queryCAM.mat 
 
 python eval.py \
---label_gallery_path=/home/yuanziyi/bishe/Multi-scale/98455/test_gallery_labels.mat \
---feature_gallery_path=/home/yuanziyi/bishe/Multi-scale/98455/test_gallery_features.mat \
---label_probe_path=/home/yuanziyi/bishe/Multi-scale/98455/test_probe_labels.mat \
---feature_probe_path=/home/yuanziyi/bishe/Multi-scale/98455/test_probe_features.mat \
---cam_gallery_path=/home/yuanziyi/bishe/Multi-scale/98455/testCAM.mat \
---cam_probe_path=/home/yuanziyi/bishe/Multi-scale/98455/queryCAM.mat 
+--label_gallery_path=/home/yuanziyi/bishe/Multi-scale/75930/test_gallery_labels.mat \
+--feature_gallery_path=/home/yuanziyi/bishe/Multi-scale/75930/test_gallery_features.mat \
+--label_probe_path=/home/yuanziyi/bishe/Multi-scale/75930/test_probe_labels.mat \
+--feature_probe_path=/home/yuanziyi/bishe/Multi-scale/75930/test_probe_features.mat \
+--cam_gallery_path=/home/yuanziyi/bishe/Multi-scale/75930/testCAM.mat \
+--cam_probe_path=/home/yuanziyi/bishe/Multi-scale/75930/queryCAM.mat 
 
 python eval.py \
---label_gallery_path=/home/yuanziyi/bishe/Multi-scale/99832/test_gallery_labels.mat \
---feature_gallery_path=/home/yuanziyi/bishe/Multi-scale/99832/test_gallery_features.mat \
---label_probe_path=/home/yuanziyi/bishe/Multi-scale/99832/test_probe_labels.mat \
---feature_probe_path=/home/yuanziyi/bishe/Multi-scale/99832/test_probe_features.mat \
---cam_gallery_path=/home/yuanziyi/bishe/Multi-scale/99832/testCAM.mat \
---cam_probe_path=/home/yuanziyi/bishe/Multi-scale/99832/queryCAM.mat 
+--label_gallery_path=/home/yuanziyi/bishe/Multi-scale/78029/test_gallery_labels.mat \
+--feature_gallery_path=/home/yuanziyi/bishe/Multi-scale/78029/test_gallery_features.mat \
+--label_probe_path=/home/yuanziyi/bishe/Multi-scale/78029/test_probe_labels.mat \
+--feature_probe_path=/home/yuanziyi/bishe/Multi-scale/78029/test_probe_features.mat \
+--cam_gallery_path=/home/yuanziyi/bishe/Multi-scale/78029/testCAM.mat \
+--cam_probe_path=/home/yuanziyi/bishe/Multi-scale/78029/queryCAM.mat 
 
 # python eval.py \
 # --label_gallery_path=/home/yuanziyi/bishe/Multi-scale/58228/test_gallery_labels.mat \
