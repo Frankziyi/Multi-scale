@@ -51,7 +51,6 @@ class MyInception(BaseModel):
                 self.feature = tf.concat([self.sub_models[0].end_points['AvgPool_1a'],
                     self.sub_models[1].end_points['AvgPool_1a']], axis=-1)
                 x = slim.dropout(self.feature, keep_prob=0.5, scope='Dropout_joint')
-                self.feature = x
                 x = slim.conv2d(x, self.num_classes, [1, 1], activation_fn=None,
                              normalizer_fn=None, scope='Conv2d_joint_1x1')
                 x = tf.squeeze(x)
