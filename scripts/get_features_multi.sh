@@ -23,7 +23,7 @@ python get_features_multi.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=24513 \
+--ckpt_num=61055 \
 --GPU_use=6 \
 --scale_size1=299 \
 --scale_size2=225
