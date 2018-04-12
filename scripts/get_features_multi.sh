@@ -24,7 +24,7 @@ python get_features_multi.py \
 --optimizer=sgd \
 --weight_decay=0.00004 \
 --ckpt_num=22641 \
---GPU_use=7 \
+--GPU_use=6 \
 --scale_size1=299 \
 --scale_size2=225
 
