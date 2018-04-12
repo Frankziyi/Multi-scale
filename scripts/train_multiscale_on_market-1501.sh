@@ -23,7 +23,7 @@ python train_multiscale.py \
 --adam_beta1=0.5 \
 --adam_beta2=0.999 \
 --weight_decay=0.00004 \
---GPU_use=7 \
+--GPU_use=6 \
 --pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
 --pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_299/model.ckpt-49618 \
 --pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_225/model.ckpt-58714
@@ -43,7 +43,7 @@ python train_multiscale.py \
 --adam_beta1=0.5 \
 --adam_beta2=0.999 \
 --weight_decay=0.00004 \
---GPU_use=7 \
+--GPU_use=6 \
 --pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
 --pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_299/model.ckpt-49618 \
 --pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_225/model.ckpt-58714
@@ -63,7 +63,7 @@ python train_multiscale.py \
 --adam_beta1=0.5 \
 --adam_beta2=0.999 \
 --weight_decay=0.00004 \
---GPU_use=7 \
+--GPU_use=6 \
 --pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
 --pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_299/model.ckpt-49618 \
 --pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_225/model.ckpt-58714
@@ -83,7 +83,7 @@ python train_multiscale.py \
 --adam_beta1=0.5 \
 --adam_beta2=0.999 \
 --weight_decay=0.00004 \
---GPU_use=7 \
+--GPU_use=6 \
 --pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
 --pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_299/model.ckpt-49618 \
 --pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_225/model.ckpt-58714
@@ -103,7 +103,7 @@ python train_multiscale.py \
 --adam_beta1=0.5 \
 --adam_beta2=0.999 \
 --weight_decay=0.00004 \
---GPU_use=7 \
+--GPU_use=6 \
 --pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
 --pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_299/model.ckpt-49618 \
 --pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_225/model.ckpt-58714
