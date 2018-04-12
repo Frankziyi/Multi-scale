@@ -466,27 +466,27 @@ class Trainer(object):
     def load_model(self):
         # return num of last-batch
         # if no checkpoint, return -1
-        # if os.path.exists(FLAGS.checkpoint_dir):
-        #     filenames = os.listdir(FLAGS.checkpoint_dir)
-        #     filenames = [name for name in filenames if name.endswith('index')]
-        #     if len(filenames) > 0:
-        #         pattern = r'model\.ckpt\-(\d+)\.index'
-        #         nums = [int(re.search(pattern, name).groups()[0]) for name in filenames]
-        #         max_num = max(nums)
+        if os.path.exists(FLAGS.checkpoint_dir):
+            filenames = os.listdir(FLAGS.checkpoint_dir)
+            filenames = [name for name in filenames if name.endswith('index')]
+            if len(filenames) > 0:
+                pattern = r'model\.ckpt\-(\d+)\.index'
+                nums = [int(re.search(pattern, name).groups()[0]) for name in filenames]
+                max_num = max(nums)
 
-        #         self.saver.restore(self.sess, os.path.join(FLAGS.checkpoint_dir, 'model.ckpt-{}'.format(max_num)))
-        #         print("[JH]use checkpoint-{} weights".format(max_num))
-        #         return max_num
-        # else:
-        #     self.network.load_pretrain_model(self.sess, 
-        #         [FLAGS.pretrain_branch_0_path, FLAGS.pretrain_branch_1_path])
-        #     print("[ZKC]use pretrain init weights")
-        #     return -1
-
-        self.network.load_pretrain_model(self.sess, 
+                self.saver.restore(self.sess, os.path.join(FLAGS.checkpoint_dir, 'model.ckpt-{}'.format(max_num)))
+                print("[JH]use checkpoint-{} weights".format(max_num))
+                return max_num
+        else:
+            self.network.load_pretrain_model(self.sess, 
                 [FLAGS.pretrain_branch_0_path, FLAGS.pretrain_branch_1_path])
-        print("[ZKC]use pretrain init weights")
-        return -1
+            print("[ZKC]use pretrain init weights")
+            return -1
+
+        # self.network.load_pretrain_model(self.sess, 
+        #         [FLAGS.pretrain_branch_0_path, FLAGS.pretrain_branch_1_path])
+        # print("[ZKC]use pretrain init weights")
+        # return -1
 
         print("[JH]use random init weights")
         return -1
