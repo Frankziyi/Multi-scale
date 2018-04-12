@@ -2,7 +2,7 @@
 # Where the pre-trained InceptionV3 checkpoint is saved to.
 PRETRAINED_CHECKPOINT_DIR=/home/yuanziyi/checkpoints
 # Where the training (fine-tuned) checkpoint and logs will be saved to.
-CKPT_SAVE_DIR=/home/yuanziyi/checkpoints/Duke_inception_multi
+CKPT_SAVE_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Duke_inception_multi
 # WHere the log is saved to
 LOG_DIR=/world/data-gpu-94/sysu-reid/zhangkaicheng/log
 # Wher the tfrecord file is save to
