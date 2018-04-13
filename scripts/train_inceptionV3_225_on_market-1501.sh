@@ -2,7 +2,7 @@
 # Where the pre-trained InceptionV3 checkpoint is saved to.
 PRETRAINED_CHECKPOINT_DIR=/world/data-gpu-94/sysu-reid/checkpoints
 # Where the training (fine-tuned) checkpoint and logs will be saved to.
-TRAIN_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Duke_inception_256_128
+TRAIN_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Duke_inception_320_160
 # Where the dataset is saved to.
 DATASET_DIR=/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord-Rect
 # WHere the log is saved to
