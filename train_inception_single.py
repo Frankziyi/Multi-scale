@@ -144,15 +144,19 @@ tf.app.flags.DEFINE_integer(
 tf.app.flags.DEFINE_integer('max_number_of_steps', None,
                             'The maximum number of training steps.')
 
-tf.app.flags.DEFINE_integer('origin_height', 225, 'origin height of image')
+tf.app.flags.DEFINE_integer('origin_height', 256, 'origin height of image')
 
-tf.app.flags.DEFINE_integer('origin_width', 225, 'origin width of image')
+tf.app.flags.DEFINE_integer('origin_width', 128, 'origin width of image')
 
 tf.app.flags.DEFINE_integer('origin_channel', 3, 'origin channel of image')
 
 tf.app.flags.DEFINE_integer('num_classes', 702, 'num of classes')
 
 tf.app.flags.DEFINE_integer('scale_size', 299, 'size of scale in single model')
+
+tf.app.flags.DEFINE_integer('scale_width', 256, 'size of scale in single model')
+
+tf.app.flags.DEFINE_integer('scale_height', 128, 'size of scale in single model')
 
 tf.app.flags.DEFINE_string('GPU_use', 0, 'number of GPU to use')
 
@@ -340,7 +344,7 @@ class Trainer(object):
         # jh-future:sizes can be add into tf.app.flags
         network = my_model.MyInception(
             FLAGS.num_classes-FLAGS.labels_offset,
-            [FLAGS.scale_size],
+            [FLAGS.scale_width, FLAGS.scale_height],
             FLAGS.model_name,
             is_training=True
         )

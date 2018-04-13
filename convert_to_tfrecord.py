@@ -16,7 +16,7 @@ import pdb
 
 #setting path
 input_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID/bounding_box_train'
-output_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord/bounding_box_train'
+output_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord-Rect/bounding_box_train'
 
 num_workers = 4
 
@@ -41,7 +41,7 @@ def worker(img_names, output_file):
 
     for i in range(len(labels)):
         img = imgs[i]
-        img = transform.resize(img, (225, 225))
+        img = transform.resize(img, (256, 128))
         img = (img * 255).astype(np.uint8)
         label = dict_labels[labels[i]]
         row, col, _ = img.shape

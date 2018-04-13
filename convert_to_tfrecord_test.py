@@ -16,7 +16,7 @@ import pdb
 
 #setting path
 input_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID/query'
-output_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord/query'
+output_path = '/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord-Rect/query'
 
 num_workers = 4
 
@@ -39,7 +39,7 @@ def worker(args):
     
     for i in range(len(labels)):
         img = imgs[i]
-        img = transform.resize(img, (225, 225))
+        img = transform.resize(img, (256, 128))
         img = (img * 255).astype(np.uint8)
         label = labels[i]
         cam = cams[i]
