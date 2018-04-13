@@ -1,6 +1,6 @@
 #!/bin/bash
 # Where the pre-trained InceptionV3 checkpoint is saved to.
-PRETRAINED_CHECKPOINT_DIR=/home/yuanziyi/checkpoints
+PRETRAINED_CHECKPOINT_DIR=/world/data-gpu-94/sysu-reid/checkpoints
 # Where the training (fine-tuned) checkpoint and logs will be saved to.
 CKPT_SAVE_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Duke_inception_multi_rect
 # WHere the log is saved to
