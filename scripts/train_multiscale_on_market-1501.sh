@@ -2,7 +2,7 @@
 # Where the pre-trained InceptionV3 checkpoint is saved to.
 PRETRAINED_CHECKPOINT_DIR=/home/yuanziyi/checkpoints
 # Where the training (fine-tuned) checkpoint and logs will be saved to.
-# CKPT_SAVE_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Duke_inception_multi
+CKPT_SAVE_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Duke_inception_multi_rect
 # WHere the log is saved to
 LOG_DIR=/world/data-gpu-94/sysu-reid/zhangkaicheng/log
 # Wher the tfrecord file is save to
@@ -15,7 +15,6 @@ python train_multiscale.py \
 --model_name=inception_v3 \
 --batch_size=8 \
 --max_number_of_steps=20000 \
---checkpoint_dir=${CKPT_SAVE_DIR} \
 --log_dir=${LOG_DIR} \
 --save_model_summary_secs=360 \
 --log_every_n_steps=100 \
