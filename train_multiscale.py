@@ -466,7 +466,7 @@ class Trainer(object):
     def load_model(self):
         # return num of last-batch
         # if no checkpoint, return -1
-        if os.path.exists(FLAGS.checkpoint_dir):
+        if FLAGS.max_number_of_steps!=20000:
             filenames = os.listdir(FLAGS.checkpoint_dir)
             filenames = [name for name in filenames if name.endswith('index')]
             if len(filenames) > 0:
