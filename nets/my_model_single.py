@@ -39,6 +39,9 @@ class MyInception(BaseModel):
 
     def init_network(self):
         self.sub_models = []
+        sub_model = SubIncption([self.image,self.label],
+                self.num_classes, sizes, 'branch_0'., is_training=self.is_training)
+        self.sub_models.append(sub_model)
         # for i,s in enumerate(self.sizes):
         #     sub_model = SubIncption([self.image,self.label],
         #         self.num_classes, s, 'branch_{}'.format(i), is_training=self.is_training)
@@ -111,7 +114,7 @@ class SubIncption(BaseModel):
         self.image = input[0]
         self.label = input[1]
         self.num_classes = num_classes
-        self.size = size
+        self.sizes = size
         self.scope = scope
         self.is_training = is_training
 
