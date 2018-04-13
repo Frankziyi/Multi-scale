@@ -15,6 +15,7 @@ python train_multiscale.py \
 --model_name=inception_v3 \
 --batch_size=8 \
 --max_number_of_steps=20000 \
+--checkpoint_dir=${CKPT_SAVE_DIR} \
 --log_dir=${LOG_DIR} \
 --save_model_summary_secs=360 \
 --log_every_n_steps=100 \
