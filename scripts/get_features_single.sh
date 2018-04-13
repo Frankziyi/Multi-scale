@@ -2,7 +2,7 @@
 # Where the pre-trained InceptionV3 checkpoint is saved to.
 PRETRAINED_CHECKPOINT_DIR=/world/data-gpu-94/sysu-reid/checkpoints
 # Where the training (fine-tuned) checkpoint and logs will be saved to.
-TRAIN_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Duke_inception_256_128
+TRAIN_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Duke_inception_320_160
 # Where the dataset is saved to.
 DATASET_DIR=/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord-Rect
 # WHere the log is saved to
@@ -23,7 +23,7 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=46240 \
+--ckpt_num=46701 \
 --scale_size=299
 
 python get_features_single.py \
@@ -38,7 +38,7 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=49532 \
+--ckpt_num=49672 \
 --scale_size=299
 
 python get_features_single.py \
@@ -53,7 +53,7 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=52868 \
+--ckpt_num=52637 \
 --scale_size=299
 
 python get_features_single.py \
@@ -68,7 +68,7 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=56181 \
+--ckpt_num=55608 \
 --scale_size=299
 
 python get_features_single.py \
@@ -83,5 +83,5 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=59516 \
+--ckpt_num=58578 \
 --scale_size=299
