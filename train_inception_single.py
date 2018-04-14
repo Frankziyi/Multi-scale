@@ -144,9 +144,9 @@ tf.app.flags.DEFINE_integer(
 tf.app.flags.DEFINE_integer('max_number_of_steps', None,
                             'The maximum number of training steps.')
 
-tf.app.flags.DEFINE_integer('origin_height', 256, 'origin height of image')
+tf.app.flags.DEFINE_integer('origin_height', 128, 'origin height of image')
 
-tf.app.flags.DEFINE_integer('origin_width', 128, 'origin width of image')
+tf.app.flags.DEFINE_integer('origin_width', 64, 'origin width of image')
 
 tf.app.flags.DEFINE_integer('origin_channel', 3, 'origin channel of image')
 
