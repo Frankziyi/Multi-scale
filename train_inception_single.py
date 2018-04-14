@@ -150,7 +150,7 @@ tf.app.flags.DEFINE_integer('origin_width', 128, 'origin width of image')
 
 tf.app.flags.DEFINE_integer('origin_channel', 3, 'origin channel of image')
 
-tf.app.flags.DEFINE_integer('num_classes', 702, 'num of classes')
+tf.app.flags.DEFINE_integer('num_classes', 751, 'num of classes')
 
 tf.app.flags.DEFINE_integer('scale_size', 299, 'size of scale in single model')
 
