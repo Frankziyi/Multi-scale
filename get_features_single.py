@@ -135,9 +135,9 @@ tf.app.flags.DEFINE_integer('num_classes', 751, 'num of classes')
 
 tf.app.flags.DEFINE_integer('scale_size', 299, 'size of scale in single model')
 
-tf.app.flags.DEFINE_integer('scale_width', 320, 'size of scale in single model')
+tf.app.flags.DEFINE_integer('scale_width', 256, 'size of scale in single model')
 
-tf.app.flags.DEFINE_integer('scale_height', 160, 'size of scale in single model')
+tf.app.flags.DEFINE_integer('scale_height', 128, 'size of scale in single model')
 
 tf.app.flags.DEFINE_string('GPU_use', 0, 'number of GPU to use')
 
