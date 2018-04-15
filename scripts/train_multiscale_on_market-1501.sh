@@ -2,11 +2,11 @@
 # Where the pre-trained InceptionV3 checkpoint is saved to.
 PRETRAINED_CHECKPOINT_DIR=/world/data-gpu-94/sysu-reid/checkpoints
 # Where the training (fine-tuned) checkpoint and logs will be saved to.
-CKPT_SAVE_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Duke_inception_multi_rect
+CKPT_SAVE_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Market_inception_multi_rect
 # WHere the log is saved to
 LOG_DIR=/world/data-gpu-94/sysu-reid/zhangkaicheng/log
 # Wher the tfrecord file is save to
-DATASET_DIR=/world/data-gpu-94/sysu-reid/person-reid-data/DukeMTMC-reID-tfrecord-Rect/bounding_box_train
+DATASET_DIR=/world/data-gpu-94/sysu-reid/zhangkaicheng/Market-1501-tfrecord/bounding_box_train
 
 python train_multiscale.py \
 --learning_rate=2e-4 \
@@ -25,8 +25,8 @@ python train_multiscale.py \
 --weight_decay=0.00004 \
 --GPU_use=6 \
 --pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
---pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_320_160/model.ckpt-58578 \
---pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_256_128/model.ckpt-49532
+--pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Market_inception_320_160/model.ckpt-50808 \
+--pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Market_inception_256_128/model.ckpt-57155
 
 python train_multiscale.py \
 --learning_rate=5e-5 \
@@ -45,8 +45,8 @@ python train_multiscale.py \
 --weight_decay=0.00004 \
 --GPU_use=5 \
 --pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
---pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_299/model.ckpt-49618 \
---pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_225/model.ckpt-58714
+--pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Market_inception_320_160/model.ckpt-50808 \
+--pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Market_inception_256_128/model.ckpt-57155
 
 python train_multiscale.py \
 --learning_rate=1e-5 \
@@ -65,8 +65,8 @@ python train_multiscale.py \
 --weight_decay=0.00004 \
 --GPU_use=5 \
 --pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
---pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_299/model.ckpt-49618 \
---pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_225/model.ckpt-58714
+--pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Market_inception_320_160/model.ckpt-50808 \
+--pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Market_inception_256_128/model.ckpt-57155
 
 python train_multiscale.py \
 --learning_rate=5e-6 \
@@ -85,8 +85,8 @@ python train_multiscale.py \
 --weight_decay=0.00004 \
 --GPU_use=5 \
 --pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
---pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_299/model.ckpt-49618 \
---pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_225/model.ckpt-58714
+--pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Market_inception_320_160/model.ckpt-50808 \
+--pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Market_inception_256_128/model.ckpt-57155
 
 python train_multiscale.py \
 --learning_rate=1e-6 \
@@ -105,5 +105,5 @@ python train_multiscale.py \
 --weight_decay=0.00004 \
 --GPU_use=5 \
 --pretrain_path=${PRETRAINED_CHECKPOINT_DIR}/inception_v3.ckpt \
---pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_299/model.ckpt-49618 \
---pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Duke_inception_225/model.ckpt-58714
+--pretrain_branch_0_path=${PRETRAINED_CHECKPOINT_DIR}/Market_inception_320_160/model.ckpt-50808 \
+--pretrain_branch_1_path=${PRETRAINED_CHECKPOINT_DIR}/Market_inception_256_128/model.ckpt-57155
