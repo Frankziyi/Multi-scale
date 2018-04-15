@@ -2,7 +2,7 @@
 # Where the pre-trained InceptionV3 checkpoint is saved to.
 PRETRAINED_CHECKPOINT_DIR=/world/data-gpu-94/sysu-reid/checkpoints
 # Where the training (fine-tuned) checkpoint and logs will be saved to.
-TRAIN_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Market_inception_320_160
+TRAIN_DIR=/world/data-gpu-94/sysu-reid/checkpoints/Market_inception_256_128
 # Where the dataset is saved to.
 DATASET_DIR=/world/data-gpu-94/sysu-reid/zhangkaicheng/Market-1501-tfrecord
 # WHere the log is saved to
@@ -23,7 +23,7 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=47827 \
+--ckpt_num=43710 \
 
 python get_features_single.py \
 --dataset_name=Market_1501 \
@@ -37,7 +37,7 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=50808 \
+--ckpt_num=47068 \
 
 python get_features_single.py \
 --dataset_name=Market_1501 \
@@ -51,7 +51,7 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=53806 \
+--ckpt_num=50421 \
 
 python get_features_single.py \
 --dataset_name=Market_1501 \
@@ -65,7 +65,7 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=56793 \
+--ckpt_num=53782 \
 
 python get_features_single.py \
 --dataset_name=Market_1501 \
@@ -79,4 +79,4 @@ python get_features_single.py \
 --log_dir=${LOG_DIR} \
 --optimizer=sgd \
 --weight_decay=0.00004 \
---ckpt_num=59766 \
+--ckpt_num=57155 \
