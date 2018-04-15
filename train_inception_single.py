@@ -158,7 +158,7 @@ tf.app.flags.DEFINE_integer('scale_width', 320, 'size of scale in single model')
 
 tf.app.flags.DEFINE_integer('scale_height', 160, 'size of scale in single model')
 
-tf.app.flags.DEFINE_string('GPU_use', 0, 'number of GPU to use')
+tf.app.flags.DEFINE_string('GPU_use', 5, 'number of GPU to use')
 
 #####################
 # Dir Flags #
